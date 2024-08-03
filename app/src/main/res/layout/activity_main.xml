@@ -6,28 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textGpsSupported"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/butGetLocation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/get_location"
-        app:layout_constraintEnd_toEndOf="@+id/textGpsSupported"
-        app:layout_constraintStart_toStartOf="@+id/textGpsSupported"
-        app:layout_constraintTop_toBottomOf="@+id/textGpsSupported" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintButtonSize" />
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edLocation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -39,6 +31,7 @@
         app:layout_constraintEnd_toEndOf="@+id/butGetLocation"
         app:layout_constraintStart_toStartOf="@+id/butGetLocation"
         app:layout_constraintTop_toBottomOf="@+id/butGetLocation"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

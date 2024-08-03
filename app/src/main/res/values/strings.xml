@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">TestGps</string>
-    <string name="get_location">Get Location</string>
+    <string name="get_location">Get location</string>
 </resources>
